@@ -1,0 +1,1 @@
+alert("Seja bem vindo a página de Gastronomia Angolana 🇦🇴🇦🇴. \n\nAqui está uma breve lista de pratos típicos de Angola com receitas para culinária em pdf.\n\n Obrigado (a) pela sua visita que satisfaz as suas necessidades.\n");

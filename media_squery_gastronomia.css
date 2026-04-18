@@ -1,0 +1,206 @@
+@charset"UTF-8";
+@media screen and (min-width: 900px)
+{
+  *{
+      margin: 0px;
+      padding: 0px;
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+  :root{
+    --texto:#FFF;
+    --inverso:#000;
+    --provincias: RED;
+  }
+  html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 300px;
+  }
+  body{
+    background: linear-gradient(-0deg,BLACK,YELLOW,RED);
+  }
+  .cabecalho{
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(30deg,#000000,#EDEE50,#FF0000);
+    padding: 10px;
+    text-align: center;
+    color: var(--texto);
+    animation: texto 3s infinite;
+    background-size: 400% 400%;
+    margin-bottom: 30px;
+    text-shadow: 5px 5px 9px #000;
+    box-shadow: 9px 9px 3px #000;
+  }
+  .cabecalho h1{
+    font-size: 90px;
+    text-shadow: 9px 9px 3px #000;
+  }
+  @keyframes texto{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+  }
+  .links{
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+  .links a{
+    color: var(--texto);
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 50px;
+  }
+  .links a:hover{
+    background: linear-gradient(-45deg,#FFF908,#E40404);
+    padding: 20px;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+  }
+  .titulo{
+    color: var(--texto);
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    margin-top: 20px;
+    text-shadow: 10px 10px 8px #000;
+  }
+  .provincias{
+    text-align: left;
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    border-radius: 20px;
+    background: #F4F4F4;
+    margin-bottom: 10%;
+    color: var(--inverso);
+    font-size: 60px;
+    padding: 30px;
+    text-shadow: 5px 5px 9px #000;
+    box-shadow: 10px 10px 20px #111;
+    animation: rolar 2s ease-in-out;
+  }
+  title span:after{
+    content:'';
+    padding-left: 1px;
+    padding: 20px;
+    animation: words 8s infinite;
+  }
+  @keyframes words{
+    0%,10%{
+      content:'Luanda';
+      color: var(--provincias);
+    }
+    20%,30%{
+      content:'Uíge';
+      color: var(--provincias);
+      
+    }
+    40%,60%{
+      content: 'Malange';
+      color: var(--provincias);
+    }
+    70%,100%{
+      content:'Cabinda';
+      color: var(--provincias);
+    }
+  }
+  .home{
+    width: 80%;
+    height: auto;
+    color: var(--inverso);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10%;
+    background: #FFF;
+    box-shadow: 5px 10px 15px #000;
+    animation: rolar 2s ease-in-out;
+  }
+  .home h2{
+    padding: 10px;
+    font-size: 60px;
+    text-shadow: 5px 5px 15px #000;
+  }
+  .home p{
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 10px;
+  }
+  .receita{
+    width: 80%;
+    height: auto;
+    background: #FFFFFF;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 15px;
+    margin-left: 10%;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px #000;
+    animation: rolar 2s ease-in-out;
+  }
+  .prato{
+    font-size: 60px;
+    padding: 15px;
+    color: var(--inverso);
+    text-shadow: 5px 5px 15px #000;
+  }
+  #receitas .receita p{
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 10px;
+    color: var(--inverso);
+  }
+  .receita .imagens{
+    height: 40%;
+    width: 45.1%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px #000;
+    border-radius: 10px;
+  }
+  .receita .imagens:hover{
+    margin-top: 15px;
+    box-shadow: 5px 5px 15px #000;
+    transition: transform 3s ease-in-out;
+  }
+  .botao{
+    width: 40%;
+    height: auto;
+    background: linear-gradient(-45deg,#FFF908,#E40404);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-bottom: 10px;
+  }
+  .botao a{
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--texto);
+  }
+  .rodape{
+    background: linear-gradient(30deg,#000000,#EDEE50,#FF0000);
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    animation: texto 3s infinite;
+    background-size: 400% 400%;
+  }
+  .rodape h1{
+    font-size: 70px;
+    text-shadow: 5px 5px 5px #000;
+  }
+  .rodape p{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
